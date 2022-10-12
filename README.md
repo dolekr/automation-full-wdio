@@ -17,3 +17,5 @@ In terminal, execute command
 npx wdio run ./wdio.conf.js
 ```
 A confirmation window to allow webdriver to control your browser may pop-up when running the tests for the first time. Confirm it to allow.
+
+test commitu
