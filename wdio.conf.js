@@ -8,12 +8,12 @@ exports.config = {
     maxInstances: 10,
     capabilities: [{
         maxInstances: 5,
-        browserName: 'chrome',
+        browserName: 'firefox',
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
             args: [
                 // '--window-size=1920,1080',
-                // '--headless',
+                '--headless',
                 '--no-sandbox',
                 '--disable-gpu',
                 '--disable-setuid-sandbox',
@@ -24,13 +24,13 @@ exports.config = {
         "moz:firefoxOptions": {
             // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
             args: [
-                // '-headless'
+                '-headless'
             ]
         }
     }],
     logLevel: 'info', // trace | debug | info | warn | error | silent
     bail: 0,
-    baseUrl: 'ADRESA TESTOVANE APLIKACE',
+    baseUrl: 'https://team8-2022brno.herokuapp.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
